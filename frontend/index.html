@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Predictor | Maverick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IPL CRICKET PREDICTION</h1>
+            <p class="subtitle">Predict the Chase in Real-Time</p>
+        </header>
+
+        <form id="predictForm">
+            <div class="form-grid">
+                <div class="input-group">
+                    <label>Batting Team</label>
+                    <select name="batting_team" required>
+                        <option value="" disabled selected>Select Team</option>
+                        <option>Mumbai Indians</option>
+                        <option>Chennai Super Kings</option>
+                        <option>Royal Challengers Bangalore</option>
+                        <option>Kolkata Knight Riders</option>
+                        <option>Kings XI Punjab</option>
+                        <option>Rajasthan Royals</option>
+                        <option>Delhi Capitals</option>
+                        <option>Sunrisers Hyderabad</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Bowling Team</label>
+                    <select name="bowling_team" required>
+                        <option value="" disabled selected>Select Team</option>
+                        <option>Mumbai Indians</option>
+                        <option>Chennai Super Kings</option>
+                        <option>Royal Challengers Bangalore</option>
+                        <option>Kolkata Knight Riders</option>
+                        <option>Kings XI Punjab</option>
+                        <option>Rajasthan Royals</option>
+                        <option>Delhi Capitals</option>
+                        <option>Sunrisers Hyderabad</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Host City</label>
+                    <select name="city" required>
+                        <option value="" disabled selected>Select City</option>
+                        <option>Mumbai</option>
+                        <option>Chennai</option>
+                        <option>Bangalore</option>
+                        <option>Hyderabad</option>
+                        <option>Kolkata</option>
+                        <option>Delhi</option>
+                        <option>Chandigarh</option>
+                        <option>Jaipur</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Target Score</label>
+                    <input type="number" name="total_runs_x" placeholder="e.g. 180" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Runs Left</label>
+                    <input type="number" name="runs_left" placeholder="e.g. 45" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Balls Left</label>
+                    <input type="number" name="balls_left" placeholder="e.g. 24" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Wickets Down</label>
+                    <input type="number" name="wickets" placeholder="0-9" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Current RR</label>
+                    <input type="number" name="crr" step="0.01" placeholder="e.g. 8.2" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Required RR</label>
+                    <input type="number" name="rrr" step="0.01" placeholder="e.g. 10.5" required>
+                </div>
+            </div>
+
+            <button type="submit" id="predictBtn">ANALYZE PROBABILITY</button>
+        </form>
+
+        <div id="result"></div>
+
+        <footer>
+            <p>Developed by <span>Sheraz Ali Jan</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
